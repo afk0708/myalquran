@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="google-site-verification" content="4UtnLV-c_54EeMyRBmwnd11mJklHJbHbIB0NXaw0BzQ" />
+    <!-- Primary Meta Tags & Title -->
+    <title>Al-Qur'an Digital - Terjemahan, Audio Murottal & Jadwal Sholat</title>
+    <meta name="title" content="Al-Qur'an Digital - Terjemahan, Audio Murottal & Jadwal Sholat" />
+    <meta name="description" content="Aplikasi Al-Qur'an Digital lengkap 30 Juz 114 Surat dengan terjemahan bahasa Indonesia, audio murottal per ayat, panduan sholat, doa & hadits, serta jadwal sholat akurat sesuai lokasi." />
+    <meta name="keywords" content="quran digital, al-quran online, terjemahan quran, audio murottal, jadwal sholat, panduan sholat, doa harian, hadits shahih, islam" />
+    <meta name="author" content="Al-Qur'an Digital" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Al-Qur'an Digital - Terjemahan, Audio Murottal & Jadwal Sholat" />
+    <meta property="og:description" content="Baca Al-Qur'an 30 Juz online, dengarkan murottal per ayat, cek jadwal sholat dan panduan ibadah lengkap." />
+    <meta property="og:image" content="./favicon.svg" />
+
+    <!-- Twitter Cards -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Al-Qur'an Digital - Terjemahan, Audio Murottal & Jadwal Sholat" />
+    <meta property="twitter:description" content="Baca Al-Qur'an 30 Juz online dengan terjemahan Indonesia, audio qari internasional, dan jadwal sholat." />
+    <meta property="twitter:image" content="./favicon.svg" />
+
+    <!-- Favicon & Web App Manifest (PWA) -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    <link rel="manifest" href="./manifest.json" />
+    
+    <!-- Mobile & Browser Theme Settings -->
+    <meta name="theme-color" content="#059669" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Quran Digital" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Quran Digital" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="googleebefdbee965c8ca1" />
+    <meta name="google-site-verification" content="googleebefdbee965c8ca1.html" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 transition-colors duration-300 antialiased selection:bg-emerald-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+    
+    <!-- Register PWA Service Worker -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js")
+            .then((registration) => {
+              console.log("[PWA] Service Worker registered successfully with scope:", registration.scope);
+            })
+            .catch((error) => {
+              console.log("[PWA] Service Worker info:", error.message || error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
+

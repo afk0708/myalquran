@@ -1,0 +1,6 @@
+{
+  "name": "Tadarus Al-Qur'an Digital & Jadwal Sholat",
+  "description": "Aplikasi Al-Qur'an Digital interaktif dilengkapi asisten Tanya Ustadz AI, integrasi Gmail, jam digital real-time, sisa waktu hitung mundur salat, dan jadwal sholat akurat sesuai lokasi GPS pengunjung.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

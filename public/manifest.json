@@ -1,0 +1,67 @@
+{
+  "name": "Tadarus Al-Qur'an Digital & Jadwal Sholat",
+  "short_name": "Quran Digital",
+  "description": "Aplikasi Al-Qur'an Digital interaktif dilengkapi asisten Tanya Ustadz AI, jam digital real-time, sisa waktu hitung mundur salat, dan jadwal sholat akurat sesuai lokasi GPS pengunjung.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#059669",
+  "orientation": "any",
+  "categories": [
+    "education",
+    "reference",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "72x72 96x96 128x128 144x144 152x152 192x192 384x384 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "72x72 96x96 128x128 144x144 152x152 192x192 384x384 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Baca Al-Qur'an",
+      "short_name": "Al-Qur'an",
+      "description": "Buka daftar surat Al-Qur'an untuk memulai tadarus",
+      "url": "/?shortcut=quran",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Tanya Ustadz AI",
+      "short_name": "Ustadz AI",
+      "description": "Tanyakan tafsir, kandungan ayat, atau curhat spiritual ke asisten AI",
+      "url": "/?shortcut=ustadz",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Bookmarks",
+      "short_name": "Bookmarks",
+      "description": "Lihat ayat Al-Qur'an yang Anda simpan",
+      "url": "/?shortcut=bookmarks",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
